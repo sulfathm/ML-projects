@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+    <div id="next">
+        <nav>
+            <ul id="ul">
+                <a class="link" href="{{url_for('home')}}">Home</a>
+                <a class="link" href="">About us</a>
+                <a class="link" href="">Contact us</a>
+                <a class="link" href="{{url_for('reg')}}">Register</a>
+                <a class="link" href="{{url_for('home1')}}">Login</a>
+                <a class="link" href="">prediction page</a>
+            </ul>
+        </nav>
+        <form action="{{url_for('predict')}}" method="post" id="form">
+            <h2>Check total energy production</h2>
+            <input type="text" placeholder="Thermal Generation Actual (in MU)" name="text1" class="text"><br><br>
+            <input type="text" placeholder="Thermal Generation Estimated (in MU)" name="text2" class="text"><br><br>
+            <input type="text" placeholder="Nuclear Generation Actual (in MU)" name="text3" class="text"><br><br>
+            <input type="text" placeholder="Nuclear Generation Estimated (in MU)" name="text4" class="text"><br><br>
+            <input type="text" placeholder="Hydro Generation Actual (in MU)" name="text5" class="text"><br><br>
+            <input type="text" placeholder="Hydro Generation Estimated (in MU)" name="text6" class="text"><br><br>
+            <input type="submit"  value="submit" id="submit">
+        </form>
+        
+    </div>
+</body>
+</html>

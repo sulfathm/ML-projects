@@ -1,0 +1,96 @@
+#background{
+    background-image: url(../image/energy\ production.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    line-height: 75px;
+    /* position: fixed; */
+    background-color: black;
+    
+}
+
+a{
+    margin-right: 2cm;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    /* margin-bottom: -100px; */
+    text-align: center;
+    
+}
+#ul{
+    padding-bottom: 400px;
+}
+a:hover{
+    color: greenyellow;
+}
+h1{
+    text-align: center;
+    padding-top: 130px;
+}
+#content{
+    padding-top: 20px;
+}
+#form{
+    text-align: center;
+    margin-bottom: 100px;
+    padding-top: 150px;
+    /* border-style: solid;
+    border-color: grey;
+    background-color: grey;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 200px; */
+}
+.text{
+    width: 6.5cm;
+}
+h2{
+    margin-bottom: 50px;
+}
+#result{
+    background-image: url(../image/energy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    margin-top: -30px;
+}
+#head{
+    text-align: center;
+    padding-top: 200px;
+}
+#loginbackground{
+    background-image: url(../image/wind.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+#loginnav{
+    width: 100%;
+    height: 50px;
+    line-height: 75px;
+    /* position: fixed; */
+    background-color: burlywood;
+    /* /* color: black; */
+}
+#loginform{
+    text-align: center;
+    padding-top: 100px;
+    /* width: 5cm; */
+}
+.l{
+    margin-right: 0.5cm;
+}
+.col{
+    width: 250px;
+}
+#next{
+    background-image: url(../image/energy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}

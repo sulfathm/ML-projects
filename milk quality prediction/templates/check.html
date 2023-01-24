@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+    <div id="background3">
+        <nav>
+            
+            <ul id="ul3">
+                
+                <a class="link3"  href="{{url_for('home')}}">HOME</a>
+                
+                <a class="link3"  href="{{url_for('login')}}">Login</a>
+                
+                <a class="link3"  href="{{url_for('reg')}}">Register</a>
+                
+            
+            </ul>
+        </nav>
+        <form action="{{url_for('predict')}}" method="post" id="form3">
+        <!-- <div id="div1"> -->
+            <h2 id="head3">Check the type of milk you have (per 240 mL)</h2>
+            <!-- <input type="submit" id="submit3" value="submit"> -->
+            <div id="div1">
+                <input type="text" placeholder="serving size" name="text1"><br><br>
+                <input type="text" placeholder="calories" name="text2"><br><br>
+                <input type="text" placeholder="total fat(g)" name="text3"><br><br>
+                <!-- <input type="text" placeholder="Serving size"><br><br> -->
+                <input type="text" placeholder="saturated fat(g)" name="text4"><br><br>
+                <input type="text" placeholder="trans fat(g)" name="text5"><br><br>
+                <input type="text" placeholder="cholesterol(g)" name="text6"><br><br>
+                <input type="text" placeholder="sugar(g)" name="text7"><br><br>
+            </div>
+            <div id="div2">
+               <input type="text" placeholder="carbohydrate(g)" name="text8"><br><br>
+               <input type="text" placeholder="protein(g)" name="text9"><br><br>
+               <input type="text" placeholder="sodium(mg)" name="text10"><br><br>
+               <input type="text" placeholder="dietery fibre(g)" name="text11"><br><br>
+               <input type="text" placeholder="calcium(in %)" name="text12"><br><br>
+               <input type="text" placeholder="vitaminD(in %)" name="text13"><br><br>
+               <input type="text" placeholder="iron(in %)" name="text14"><br><br>
+               <!-- <input type="submit" id="submit3" value="submit" style="margin-right: 200px;"> -->
+            </div>
+            <div style="margin-left: 400px; margin-top: 100px; padding: 2% 2% 2% 2%;  color: white;">
+            <input type="submit" id="submit3" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
