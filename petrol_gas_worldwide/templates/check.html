@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="../static/css/checkcss.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="form-submit">
+            <!-- <input type="submit" value="Reset All" class="submit" name="reset" id="reset" /> -->
+            <a href="{{url_for('home')}}"><input type="submit" value="Home" class="submit" name="submit" id="submit" style="margin-bottom: 20px; margin-left: 20px; background-color: green;" /></a>
+        </div>
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    
+                    <img src="../static/image/newpic.jpg" alt="" style="height: 1000px;">
+                </div>
+
+                <div class="signup-form">
+                    
+                    <form action="{{url_for('predict')}}" method="post" class="register-form" id="register-form" >
+                        <h2>Petrol/Gas Price Prediction</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Country :</label>
+                                <!-- <input type="text" name="name" id="name" required/> -->
+                                <select name="text1" id="">
+                                    <option value="">Country</option>
+                                    <option value="0">Nigeria</option>
+                                    <option value="1">Argentina</option>
+                                    <option value="2">Australia</option>
+                                    <option value="3">Austria</option>
+                                    <option value="4">Belgium</option>
+                                    <option value="5">Brazil</option>
+                                    <option value="6">Canada</option>
+                                    <option value="7">Chile</option>
+                                    <option value="8">China</option>
+                                    <option value="9">Algeria</option>
+                                    <option value="10">Ecuadar</option>
+                                    <option value="11">Egypt</option>
+                                    <option value="12">France</option>
+                                    <option value="13">Germany</option>
+                                    <option value="14">Greece</option>
+                                    <option value="15">hang Kong</option>
+                                    <option value="16">India</option>
+                                    <option value="17">indonesia</option>
+                                    <option value="18">Iran</option>
+                                    <option value="19">Iraq</option>
+                                    <option value="20">Italy</option>
+                                    <option value="21">Japan</option>
+                                    <option value="22">kazakstan</option>
+                                    <option value="23">Kuwait</option>
+                                    <option value="24">Libya</option>
+                                    <option value="25">Malaysia</option>
+                                    <option value="26">Mexico</option>
+                                    <option value="27">Morrocco</option>
+                                    <option value="28">Netherlands</option>
+                                    <option value="29">Columbia</option>
+                                    <option value="30">pakistan</option>
+                                    <option value="31">Peru</option>
+                                    <option value="32">philippenes</option>
+                                    <option value="33">Poland</option>
+                                    <option value="34">Rassian</option>
+                                    <option value="35">Soudi Arabia</option>
+                                    <option value="36">Sigapure</option>
+                                    <option value="37">South Africa</option>
+                                    <option value="38">South Korea</option>
+                                    <option value="39">Spain</option>
+                                    <option value="40">Sweden</option>
+                                    <option value="41">Taiwan</option>
+                                    <option value="42">Thailand</option>
+                                    <option value="43">Turkey</option>
+                                    <option value="44">Ukrain</option>
+                                    <option value="45">UAE</option>
+                                    <option value="46">UK</option>
+                                    <option value="47">US</option>
+                                    <option value="48">Venezuela</option>
+                                    <option value="49">Vietnam</option>
+                                    
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="father_name">Daily oil Consumption :</label>
+                                <input type="number" name="text2" id="father_name"  required/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">World Share(%) :</label>
+                            <input type="text" name="text3" id="address"  required/>
+                        </div>
+                        <div class="form-radio">
+                            <!-- <label for="gender" class="radio-label">Gender :</label> -->
+                            <div class="form-radio-item">
+                                <!-- <input type="radio" name="gender" id="male" checked>
+                                <label for="male">Male</label> -->
+                                <!-- <span class="check"></span> -->
+                            </div>
+                            <div class="form-radio-item">
+                                <!-- <input type="radio" name="gender" id="female">
+                                <label for="female">Female</label> -->
+                                <!-- <span class="check"></span> -->
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="state">Yearly gallons per capita :</label>
+                                <div class="form-select">
+                                    <input type="number" name="text4" id="address"  required/>
+                                    <!-- <select name="state" id="state">
+                                        <option value=""></option>
+                                        <option value="us">America</option>
+                                        <option value="uk">English</option>
+                                    </select> -->
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Price per liter (PKR) :</label>
+                                <input type="number" name="text5" id="address"  required/>
+                                <!-- <div class="form-select">
+                                    <select name="city" id="city">
+                                        <option value=""></option>
+                                        <option value="losangeles">Los Angeles</option>
+                                        <option value="washington">Washington</option>
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="birth_date">GDP per capita :</label>
+                            <input type="number" name="text6" id="birth_date">
+                        </div>
+                        <div class="form-group">
+                            <label for="pincode">Price per gallon :</label>
+                            <input type="number" name="text7" id="pincode">
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Gallon GDP per capita can buy :</label>
+                            <input type="number" name="text8" id="pincode">
+                            <div class="form-select">
+                                <!-- <select name="course" id="course">
+                                    <option value=""></option>
+                                    <option value="computer">Computer Operator & Pragramming Assistant</option>
+                                    <option value="desiger">Designer</option>
+                                    <option value="marketing">Marketing</option>
+                                </select> -->
+                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Xtimes yearly gallons per capita buy :</label>
+                            <input type="number" name="text9" id="email" />
+                        </div>
+                        <div class="form-submit">
+                            <!-- <input type="submit" value="Reset All" class="submit" name="reset" id="reset" /> -->
+                            <input type="submit" value="Submit" class="submit" name="submit" id="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
